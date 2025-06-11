@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- end -->
+
+    <!-- stylesheet for the website -->
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <!-- end -->
+    <!--    
+swiper CSS for the slider  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- end -->
+    <title>TipToe Soles</title>
+
+    <!--  meta description -->
+    <meta
+      name="description"
+      content="Shop the latest collection of comfortable and stylish shoes at TipToe Soles. Enjoy 25% off, free shipping over $50, and discover trending footwear for every occasion."
+    />
+    <meta
+      name="keywords"
+      content="shoes, sneakers, men's shoes, women's shoes, kids shoes, TipToe Soles, footwear, trending shoes, comfortable shoes"
+    />
+    <!-- end -->
+  </head>
+
+  <body>
+    <!-- Banner content -->
+    <div class="info">
+      <p>
+        Limited Time Offer: Get 25% OFF on all shoes! Use code: TIPTOE25 - Free
+        shipping on orders over $50!
+      </p>
+    </div>
+    <!-- end -->
+
+    <!-- Overlay for side menu  -->
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- end -->
+
+    <!-- header section -->
+    <header class="navbar">
+      <!-- Left side -->
+      <div class="navbar-left">
+        <button class="menu-btn" id="menu-btn">&#9776;</button>
+        <div class="logo">
+          <a href="index.html" title="TipToe Soles Home">
+            <img src="images/logo-web.png" alt="TipToe Soles Logo" />
+          </a>
+        </div>
+        <div class="main-menu">
+          <a href="#">ABOUT US</a>
+          <a href="#">PRODUCTS</a>
+          <a href="#">SERVICE</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+      </div>
+
+      <!-- Right side -->
+      <div class="navbar-right">
+        <div class="navbar-search">
+          <input type="text" placeholder="Search.." />
+        </div>
+
+        <div class="navbar-buttons">
+          <a href="#" class="wishlist"
+            ><i class="fa fa-heart-o"></i>
+            <p>WISHLIST</p></a
+          >
+          <a href="#" class="cart"
+            ><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <p>CART</p></a
+          >
+          <a href="login.html" class="login"
+            ><i class="fa fa-sign-in" aria-hidden="true"></i>
+            <p>LOGIN</p></a
+          >
+        </div>
+      </div>
+      <!-- end -->
+    </header>
+    <!-- end of header -->
+
+    <!--  search only show on mobile -->
+    <div class="search">
+      <input
+        type="text"
+        name="search"
+        id="search"
+        value=""
+        placeholder="Search..."
+        title="Search"
+      />
+      <button class="btn-search">SEARCH</button>
+    </div>
+    <!-- end -->
+
+    <!-- side menu on mobile -->
+    <div class="side-menu" id="side-menu">
+      <i class="fa fa-angle-double-left back-menu" id="back-menu"></i>
+      <a href="index.html">HOME</a>
+      <a href="#">ABOUT US</a>
+      <a href="#">PRODUCTS</a>
+      <a href="#">SERVICE</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+    <!-- end -->
+
+    <!-- banner content -->
+    <div class="container">
+      <section class="hero">
+        <h1>Comfort That Moves With You</h1>
+        <p>
+          Life moves fast — your shoes shouldn't slow you down. Our everyday
+          collection is designed to support you from the morning coffee run to
+          late-night strolls, blending comfort, breathability, and effortless
+          style.
+        </p>
+        <br />
+        <button class="btn-hero">Get Started</button>
+      </section>
+      <section class="slider-container">
+        <!-- Hero Slider -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="images/slideshow/casual-street-shoes.jpg"
+                alt="Casual Street Shoes"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/slideshow/kids-shoes.jpg" alt="Kids Shoes" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/slideshow/mens-business-shoes.jpg"
+                alt="Mens Business Shoes"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/slideshow/mens-dress-shoes.jpg"
+                alt="Mens Dress Shoes"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/slideshow/platform-shoes.jpg"
+                alt="Platform Shoes"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/slideshow/wall-of-shoes.jpg"
+                alt="Wall of Shoes"
+              />
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- End of Slider -->
+      </section>
+    </div>
+    <!-- end -->
+
+    <!-- feature heading -->
+    <section class="feature">
+      <h2>Trending Shoes</h2>
+      <p>
+        Step into style with our latest collection of sneakers. Built for
+        comfort, design for impact.
+      </p>
+    </section>
+
+    <!-- end -->
+
+    <!-- content of the website  -->
+    <main class="products">
+      <!-- Product 1 -->
+      <div class="product-content">
+        <div class="product-img">
+          <img
+            src="images/Gary Black.jpg"
+            alt="Gary Black men shoes in tan and midnight on white background"
+          />
+        </div>
+
+        <div class="product-button">
+          <button class="btn-cart">
+            <i class="fa fa-cart-plus" aria-hidden="true"></i>Add to Cart
+          </button>
+        </div>
+
+        <div class="product-info">
+          <div class="product-info-top">
+            <a href="" class="product-name">Gary Black Shoes</a>
+            <p>Men Shoes<br />Daily Shoes - Tan and midnight</p>
+            <p class="product-price">$79.00</p>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <!-- Product 2 -->
+      <div class="product-content">
+        <div class="product-img">
+          <img
+            src="images/Clancy Blue.jpg"
+            alt="Men's Clancy Blue shoes featuring a blue upper, white laces, and white soles, displayed on a plain background"
+          />
+        </div>
+
+        <div class="product-button">
+          <button class="btn-cart">
+            <i class="fa fa-cart-plus" aria-hidden="true"></i>Add to Cart
+          </button>
+        </div>
+
+        <div class="product-info">
+          <div class="product-info-top">
+            <a href="" class="product-name">Clancy Blue</a>
+            <p>Men Shoes<br />Daily Shoes - Blue</p>
+            <p class="product-price">$59.00</p>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <!-- Product 3 -->
+      <div class="product-content">
+        <div class="product-img">
+          <img
+            src="images/Gary Tan.jpg"
+            alt="Gary Tan men shoes in tan and midnight, side by side on white background"
+          />
+        </div>
+
+        <div class="product-button">
+          <button class="btn-cart">
+            <i class="fa fa-cart-plus" aria-hidden="true"></i>Add to Cart
+          </button>
+        </div>
+
+        <div class="product-info">
+          <div class="product-info-top">
+            <a href="" class="product-name">Gary Tan</a>
+            <p>Men Shoes<br />Daily SHoes - Tan and midnight</p>
+            <p class="product-price">$ 79.00</p>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <!-- Product 4 -->
+
+      <div class="product-content">
+        <div class="product-img">
+          <img
+            src="images/Hesavenly Blacks.jpg"
+            alt="Hesavenly Black, Black men shoes with subtle stitching, side by side on white background"
+          />
+        </div>
+
+        <div class="product-button">
+          <button class="btn-cart">
+            <i class="fa fa-cart-plus" aria-hidden="true"></i>Add to Cart
+          </button>
+        </div>
+
+        <div class="product-info">
+          <div class="product-info-top">
+            <a href="" class="product-name">Heavenly Black</a>
+            <p>Men Shoes<br />Daily Shoes - Black</p>
+            <p class="product-price">$ 90.00</p>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <!-- Product 5  -->
+      <div class="product-content">
+        <div class="product-img">
+          <img
+            src="images/Sally Black.jpg"
+            alt="Sally Black men shoes in black and tan, displayed side by side on a white background"
+          />
+        </div>
+
+        <div class="product-button">
+          <button class="btn-cart">
+            <i class="fa fa-cart-plus" aria-hidden="true"></i>Add to Cart
+          </button>
+        </div>
+
+        <div class="product-info">
+          <div class="product-info-top">
+            <a href="" class="product-name">Sally Black</a>
+            <p>Men Shoes<br />Daily Shoes - Tan and black</p>
+            <p class="product-price">$ 75.00</p>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <!-- Product 6 -->
+      <div class="product-content">
+        <div class="product-img">
+          <img
+            src="images/Work and Walk Chesnut.jpg"
+            alt="Work and Walk Chesnut men shoes in brown leather with white soles on white background"
+          />
+        </div>
+
+        <div class="product-button">
+          <button class="btn-cart">
+            <i class="fa fa-cart-plus" aria-hidden="true"></i>Add to Cart
+          </button>
+        </div>
+
+        <div class="product-info">
+          <div class="product-info-top">
+            <a href="" class="product-name">Work and Walk Chesnut</a>
+            <p>Men Shoes<br />Daily Shoes - Chesnut</p>
+            <p class="product-price">$ 85.00</p>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <!-- view all button -->
+
+      <!-- end -->
+    </main>
+
+    <!-- end  -->
+
+    <div class="viewall">
+      <button class="view-btn">VIEW ALL</button>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="footer-container">
+      <div class="footer-column">
+        <h4>TipToe Soles</h4>
+
+        <div class="footer-address">
+          <a href="#">
+            <img src="images/logo-web.png" alt="" />
+          </a>
+          <div>
+            <p>Tiptop Soles <br /></p>
+            <p>322 Avondale Road Enfield NSW 2133</p>
+
+            <p>
+              Telephone: 02 9210 5000<br />
+              Email us at: TipToeShoes@gmail.com
+            </p>
+            <br />
+          </div>
+        </div>
+      </div>
+      <p></p>
+
+      <!-- Legal & Policies -->
+      <div class="footer-column">
+        <h4>Legal & Policies</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+          <li><a href="#">Customer Service</a></li>
+        </ul>
+      </div>
+      <!-- End -->
+
+      <!-- Help & Supports -->
+      <div class="footer-column">
+        <h4>Help & Supports</h4>
+        <ul>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Exchange Policy</a></li>
+          <li><a href="#">Delivery Policy</a></li>
+        </ul>
+      </div>
+      <!-- end -->
+
+      <!-- Follow us -->
+      <div class="footer-column">
+        <h4>Follow us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- end -->
+    <!-- end of footer -->
+
+    <!-- javascript for mobile-menu -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+
+    <!-- end -->
+  </body>
+</html>
