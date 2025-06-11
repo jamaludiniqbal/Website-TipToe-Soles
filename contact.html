@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <title>Contact Us - TipToe Soles</title>
+  </head>
+
+  <body>
+    <div class="info">
+      <p>
+        Limited Time Offer: Get 25% OFF on all shoes! Use code: TIPTOE25 - Free
+        shipping on orders over $50!
+      </p>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <header class="navbar">
+      <div class="navbar-left">
+        <button class="menu-btn" id="menu-btn">&#9776;</button>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo-web.png" alt="" />
+          </a>
+        </div>
+        <div class="main-menu">
+          <a href="#">ABOUT US</a>
+          <a href="#">PRODUCTS</a>
+          <a href="#">SERVICE</a>
+          <a
+            href="contact.html"
+            style="color: rgb(198, 158, 0); font-weight: 700"
+            >CONTACT</a
+          >
+        </div>
+      </div>
+
+      <!-- Right side -->
+      <div class="navbar-right">
+        <div class="navbar-search">
+          <input type="text" placeholder="Search.." />
+        </div>
+
+        <div class="navbar-buttons">
+          <a href="#" class="wishlist"
+            ><i class="fa fa-heart-o"></i>
+            <p>WISHLIST</p></a
+          >
+          <a href="#" class="cart"
+            ><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <p>CART</p></a
+          >
+          <a href="login.html" class="login"
+            ><i class="fa fa-sign-in" aria-hidden="true"></i>
+            <p>LOGIN</p></a
+          >
+        </div>
+      </div>
+      <!-- end -->
+    </header>
+
+    <!-- only show on mobile -->
+    <div class="search">
+      <input
+        type="text"
+        name="search"
+        id="search"
+        value=""
+        title="Search"
+        placeholder="Search..."
+      />
+      <button class="btn-search">SEARCH</button>
+    </div>
+    <!-- end -->
+
+    <!-- side menu on mobile -->
+    <div class="side-menu" id="side-menu">
+      <i class="fa fa-angle-double-left back-menu" id="back-menu"></i>
+      <a href="index.html">HOME</a>
+      <a href="#">ABOUT US</a>
+      <a href="#">PRODUCTS</a>
+      <a href="#">SERVICE</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+    <!-- end -->
+
+    <!-- content contact  -->
+
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <p>Have a question about your order or our shoes ? Send us message !</p>
+      <!-- contact form -->
+      <div class="contact-content">
+        <form action="#" class="contact-form" id="contactForm">
+          <!-- name -->
+          <div id="successMessage"></div>
+
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Jamaludin Iqbal"
+          />
+          <div id="nameError"></div>
+          <br />
+          <!-- Email -->
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            required
+            placeholder="jamaludin.iqbal@gmail.com"
+          />
+          <div id="emailError"></div>
+          <br />
+          <!-- Phone -->
+          <label for="phone">Phone Number</label>
+          <input type="number" name="phone" id="phone" />
+          <div>Optional</div>
+          <br />
+          <!-- Preffered Contact -->
+          <label for="pref-contact">Preferred Contact</label>
+          <select name="pref-contact" id="pref-contact" name="pref-contact">
+            <option value="no-select">Please Select one</option>
+            <option value="phone">Phone</option>
+            <option value="email">Email</option>
+            <option value="video">Video Chat</option>
+          </select>
+          <div id="prefError"></div>
+          <br />
+          <!-- Enquiry -->
+          <label for="enquiry">Enquiry</label>
+          <textarea
+            name="enquiry"
+            id="enquiry"
+            rows="5"
+            placeholder="Type your Enquiry"
+          ></textarea>
+          <div id="enquiryError"></div>
+          <br />
+          <!-- Checkbox -->
+          <div class="checkbox-consent">
+            <input type="checkbox" name="consent" id="consent" />
+            <label for="consent"
+              >I consent to the collection and use of my personal information
+              for the stated purposes</label
+            >
+          </div>
+          <br />
+          <div id="consentError"></div>
+
+          <button type="submit" id="contact-button" onclick="validation(event)">
+            Send Message
+          </button>
+        </form>
+
+        <!-- address -->
+        <div class="contact-info">
+          <h3>Store Contact</h3>
+          <br />
+          <p><strong>Address :</strong></p>
+
+          <p>492 Echo Ridge Avenue Solaris Business Park Portland, USA</p>
+          <p><strong>Email :</strong></p>
+          <p>support@tiptoesoles.com</p>
+          <p><strong>Phone :</strong></p>
+          <p>+1 (888) 555-1923</p>
+          <p><strong>Hours :</strong></p>
+          <p>Monday Saturday: 9:00 AM 8:00 PM (PST) Sunday: Closed</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="footer-container">
+      <div class="footer-column">
+        <h4>TipToe Soles</h4>
+
+        <div class="footer-address">
+          <a href="#">
+            <img src="images/logo-web.png" alt="" />
+          </a>
+          <div>
+            <p>Tiptop Soles <br /></p>
+            <p>322 Avondale Road Enfield NSW 2133</p>
+
+            <p>
+              Telephone: 02 9210 5000<br />
+              Email us at: TipToeShoes@gmail.com
+            </p>
+            <br />
+          </div>
+        </div>
+      </div>
+      <p></p>
+
+      <!-- Legal & Policies -->
+      <div class="footer-column">
+        <h4>Legal & Policies</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+          <li><a href="#">Customer Service</a></li>
+        </ul>
+      </div>
+      <!-- End -->
+
+      <!-- Help & Supports -->
+      <div class="footer-column">
+        <h4>Help & Supports</h4>
+        <ul>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Exchange Policy</a></li>
+          <li><a href="#">Delivery Policy</a></li>
+        </ul>
+      </div>
+      <!-- end -->
+
+      <!-- Follow us -->
+      <div class="footer-column">
+        <h4>Follow us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- end -->
+    <!-- end of footer -->
+    <script src="assets/contact-script.js"></script>
+  </body>
+</html>

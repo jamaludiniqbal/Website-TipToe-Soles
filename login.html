@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/login-script.js"></script>
+    <title>Login - TipToe Soles</title>
+  </head>
+
+  <body>
+    <div class="info">
+      <p>
+        Limited Time Offer: Get 25% OFF on all shoes! Use code: TIPTOE25 - Free
+        shipping on orders over $50!
+      </p>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <header class="navbar">
+      <div class="navbar-left">
+        <button class="menu-btn" id="menu-btn">&#9776;</button>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo-web.png" alt="" />
+          </a>
+        </div>
+        <div class="main-menu">
+          <a href="#">ABOUT US</a>
+          <a href="#">PRODUCTS</a>
+          <a href="#">SERVICE</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+      </div>
+
+      <!-- Right side -->
+      <div class="navbar-right">
+        <div class="navbar-search">
+          <input type="text" placeholder="Search.." />
+        </div>
+
+        <div class="navbar-buttons">
+          <a href="#" class="wishlist"
+            ><i class="fa fa-heart-o"></i>
+            <p>WISHLIST</p></a
+          >
+          <a href="#" class="cart"
+            ><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <p>CART</p></a
+          >
+          <a href="login.html" class="login" style="background-color: black"
+            ><i
+              class="fa fa-sign-in"
+              aria-hidden="true"
+              style="background-color: black"
+            ></i>
+            <p>LOGIN</p></a
+          >
+        </div>
+      </div>
+      <!-- end -->
+    </header>
+
+    <!-- only show on mobile -->
+    <div class="search">
+      <input
+        type="text"
+        name="search"
+        id="search"
+        value=""
+        title="Search"
+        placeholder="Search..."
+      />
+      <button class="btn-search">SEARCH</button>
+    </div>
+    <!-- end -->
+
+    <!-- side menu on mobile -->
+    <div class="side-menu" id="side-menu">
+      <i class="fa fa-angle-double-left back-menu" id="back-menu"></i>
+      <a href="index.html">HOME</a>
+      <a href="#">ABOUT US</a>
+      <a href="#">PRODUCTS</a>
+      <a href="#">SERVICE</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+    <!-- end -->
+
+    <!-- content login -->
+    <div class="login-container">
+      <section class="login-content">
+        <h3>Login to Your Account</h3>
+        <form action="#" id="loginForm">
+          <div id="successMessage"></div>
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter Username" />
+          <div id="usernameError"></div>
+          <br />
+
+          <label for="password">Password</label>
+          <div class="password-wrapper" id="password-wrapper">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter Your Password"
+            />
+            <div id="passwordError"></div>
+            <br />
+          </div>
+
+          <!-- checkbox remember me -->
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="remember" id="remember" />
+            <label for="remember">Remember Me</label>
+          </div>
+
+          <button
+            type="submit"
+            class="button-login"
+            onclick="validationForm(event)"
+          >
+            Login
+          </button>
+        </form>
+        <!-- forgot password -->
+        <div class="forgot-password">
+          <a href="#">Forgot Password</a>
+          <br />Dont' have an account ? <a href="#">Register Now</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="footer-container">
+      <div class="footer-column">
+        <h4>TipToe Soles</h4>
+
+        <div class="footer-address">
+          <a href="#">
+            <img src="images/logo-web.png" alt="" />
+          </a>
+          <div>
+            <p>Tiptop Soles <br /></p>
+            <p>322 Avondale Road Enfield NSW 2133</p>
+
+            <p>
+              Telephone: 02 9210 5000<br />
+              Email us at: TipToeShoes@gmail.com
+            </p>
+            <br />
+          </div>
+        </div>
+      </div>
+      <p></p>
+
+      <!-- Legal & Policies -->
+      <div class="footer-column">
+        <h4>Legal & Policies</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+          <li><a href="#">Customer Service</a></li>
+        </ul>
+      </div>
+      <!-- End -->
+
+      <!-- Help & Supports -->
+      <div class="footer-column">
+        <h4>Help & Supports</h4>
+        <ul>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Exchange Policy</a></li>
+          <li><a href="#">Delivery Policy</a></li>
+        </ul>
+      </div>
+      <!-- end -->
+
+      <!-- Follow us -->
+      <div class="footer-column">
+        <h4>Follow us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- end -->
+    <!-- end of footer -->
+    <script src="assets/login-script.js"></script>
+  </body>
+</html>
